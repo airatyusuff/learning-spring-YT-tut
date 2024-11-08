@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package components;
 
 public class SuperContraGame implements GamingConsole {
     public void up() {

@@ -1,4 +1,4 @@
-package com.tutorial.game;
+package components;
 
 public class GameRunner {
 

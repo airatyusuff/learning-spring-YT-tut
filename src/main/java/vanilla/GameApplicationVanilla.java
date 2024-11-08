@@ -1,5 +1,7 @@
-package com.tutorial.game;
+package vanilla;
 
+import components.GameRunner;
+import components.SuperContraGame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

@@ -2,6 +2,7 @@ package com.tutorial.game;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 record Person(String name, int age, Address addr){}
 record Address(String street, String city){}
@@ -24,6 +25,7 @@ public class AppConfiguration {
         return new Person("M3", 16, new Address("Close", "LDN"));
     }
     @Bean
+    @Primary
     public Address address() {
         return new Address("Parrin Lane", "MCR");
     }

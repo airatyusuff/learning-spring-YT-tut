@@ -5,6 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 @SpringBootApplication
 public class GameApplicationSpring {
 
@@ -21,8 +23,10 @@ public class GameApplicationSpring {
 		System.out.println(context.getBean("getPersonWithExistingParams"));
 
 		//can use the Bean type instead too, rather than name
-//		System.out.println(context.getBean(Address.class));
+		System.out.println(context.getBean(Address.class));
 
+		Arrays.stream(context.getBeanDefinitionNames())
+				.forEach(bean -> System.out.println("Bean: " + bean));
 	}
 
 }
